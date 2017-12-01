@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Hamburger.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <Button Name="BackKey"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE00E;"
+                            FontSize="28" Click="BackKey_Click"
+                            
+                            
+                            >
+
+
+            </Button>
+        </StackPanel>
+        <SplitView IsPaneOpen="True"
+                   CompactPaneLength="50"
+                   OpenPaneLength="150"
+                   DisplayMode="CompactOverlay"
+                   Name="MySplitView"
+                   Margin="0,40">
+                
+
+
+
+            <SplitView.Pane>
+                <StackPanel Background="Gray">
+                    
+                    
+                    <Button Name="HamburgerButton"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE700;"
+                            FontSize="28" Click="HamburgerButton_Click"
+                            >
+
+
+                    </Button>
+                    <ListBox Name="MyListBox" SelectionMode="Single"
+                             SelectionChanged="MyListBox_SelectionChanged">
+                        <ListBoxItem Name="Nupp1">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets"
+                                           Text="&#xE166;"
+                                           FontSize="28"
+                                           Margin="0,5,15,5"></TextBlock>
+                                <TextBlock FontSize="28">Leht 1</TextBlock>
+                            </StackPanel>
+
+                        </ListBoxItem>
+                        <ListBoxItem Name="Nupp2">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets"
+                                           Text="&#xE10F;"
+                                           FontSize="28"
+                                           Margin="0,5,15,5">
+
+
+                                </TextBlock>
+                                <TextBlock FontSize="28">Leht 2</TextBlock>
+                            </StackPanel>
+
+                        </ListBoxItem>
+                        <ListBoxItem Name="Nupp3">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets"
+                                           Text="&#xE10F;"
+                                           FontSize="28"
+                                           Margin="0,5,15,5">
+
+                                </TextBlock>
+                                <TextBlock FontSize="28">Leht 3</TextBlock>
+
+
+
+                            </StackPanel>
+
+                        </ListBoxItem>
+
+                    </ListBox>
+
+
+                </StackPanel>
+
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <Frame Name="MyFrame"></Frame>
+                    
+                    
+                </Grid>
+            </SplitView.Content>
+
+        </SplitView>
+
+        
+        
+    </Grid>
+</Page>

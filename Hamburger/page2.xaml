@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Hamburger.page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer Margin="5" IsVerticalScrollChainingEnabled="True" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock FontSize="30" FontWeight="Bold" Margin="0,9">
+                    <Run Text="USA riigiamet väidab, et Hiina valitsus kasutab DJI droone
+ luuramiseks"/>
+                </TextBlock>
+                <RichTextBlock>
+                    <Paragraph FontSize="50">
+                        <Run Text="Los Angelese immigratsiooni- ja tolliamet (LA ICE) väidab väljasaadetud memos, et nad on keskpäraselt kindlad, et droonifirma DJI annab tundlikku infot riigi taristu kohta Hiina valitsusele. Ettevõte ise kutsus süüdistusi valeks. LA ICE kirjeldab memos, et eriti huvipakkuvad on firmale näiteks raudteed või kommunaalteenuseid pakkuvad asutused, samuti relvalaod. The New York Times märgib, et süüdistuse kohaselt ei ole siiski puudutatud tavakasutajate poolt lennutatud droonid, vaid DJI droonid, mida kasutatakse erinevate ettevõtete või riigisektori poolt. Amet usub, et info abil võiks Hiina toime saata füüsilisi rünnakuid või küberrünnakuid."/>
+
+
+                    </Paragraph>
+
+                </RichTextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
